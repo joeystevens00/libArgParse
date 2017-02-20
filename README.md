@@ -7,15 +7,18 @@ import the bash script
 source libargparse.sh
 ```
 
-Then define the flags using setFlags. The expected syntax for setFlags is a comma seperated list where:    
-# is the flag to use     
-# is the variable that the flag will manipulate.     
-# how the flag will manipulate the variable    
+Then define the flags using setFlags. The expected syntax for setFlags is a comma seperated list with 4 fields.    
+ #### Field 1
+Specifies the flag to use     
+ #### Field 2
+ Specifies the variable that the flag will manipulate.     
+ #### Field 3
+ Specifies how the flag will manipulate the variable    
   * Options:     
       * val - sets the variable to the paramater passed    
       * bool - sets the variable equal to 1 (default 0)  
-
-4. sets if the flag is required or not   
+#### Fields 4
+Sets if the flag is required or not   
    * Options:   
       * 1 - Required    
       * 0 - Not Required    
