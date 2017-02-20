@@ -8,9 +8,9 @@ source libargparse.sh
 ```
 
 Then define the flags using setFlags. The expected syntax for setFlags is a comma seperated list where:    
-1. is the flag to use     
-2. is the variable that the flag will manipulate.     
-3. how the flag will manipulate the variable    
+# is the flag to use     
+# is the variable that the flag will manipulate.     
+# how the flag will manipulate the variable    
   * Options:     
       * val - sets the variable to the paramater passed    
       * bool - sets the variable equal to 1 (default 0)  
