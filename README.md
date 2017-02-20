@@ -28,21 +28,49 @@ Sets if the flag is required or not
       * 1 - Required    
       * 0 - Not Required    
 
-##### setFlags examples
-An example setting a val flag:    
+#### setFlags examples
+An example defining a val flag
+In this example a flag -u is defined that manipulates the variable $url with the value of the paramater passed to it and is a required field.  
+
+Defining   
 ```shell
 setFlags u,url,val,1
 ```
 
-Where the flag -u puts the paramater into $url and is required     
+Now if the user executes      
+```shell
+./myexamplescript -u https://www.google.com
+```
+The variable $url will contain "https://www.google.com"
 
-An example settings a bool flag:    
+But if the user executes   
+```shell
+./myexamplescript 
+```
+'-u is required.' will be printed to STDOUT
+
+An example settings a bool flag
+In this example the flag -v is defined that manipulates the $isVerbose variable with the value of 1 
+
+Defining      
 ```shell
 setFlags v,isVerbose,bool,0
 ```
 
-Where the flag -v manipulates the variable $isVerbose to be 1 (otherwise isVerbose is 0) and the flag is optional     
+Now if the user executes   
+```shell
+./myexamplescript -v
+```
+The variable $isVerbose will contain 1
 
+And if the user executes
+```shell
+./myexamplescript 
+```
+The variable $isVerbose will contain 0 and the script will continue normally as -v isn't a required flag
+
+
+#### Multiline definitions 
 setFlags also allows for defining multiple flags on one line by delimiting flag definitions by a space. E.g.    
 ```shell
 setFlags c,isCSet,bool,0 b,isBSet,bool,0 a,isASet,bool,0
