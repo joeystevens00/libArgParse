@@ -6,25 +6,29 @@ import the bash script
 ```shell
 source libargparse.sh
 ```
+Then define the flags using setFlags and execute parseFlags 
 
-Then define the flags using setFlags. The expected syntax for 
-#### setFlags
-setFlags is a comma seperated list with 4 fields.    
-### Field 1
+### setFlags
+setFlags expects a comma seperated list with 4 fields.    
+#### Field 1
 Specifies the flag to use     
-### Field 2
- Specifies the variable that the flag will manipulate.     
-### Field 3
+
+#### Field 2
+ Specifies the variable that the flag will manipulate.   
+
+#### Field 3
  Specifies how the flag will manipulate the variable    
   * Options:     
       * val - sets the variable to the paramater passed    
-      * bool - sets the variable equal to 1 (default 0)     
-### Fields 4
+      * bool - sets the variable equal to 1 (default 0)   
+
+#### Fields 4
 Sets if the flag is required or not   
    * Options:   
       * 1 - Required    
       * 0 - Not Required    
 
+##### setFlags examples
 An example setting a val flag:    
 ```shell
 setFlags u,url,val,1
@@ -44,7 +48,8 @@ setFlags also allows for defining multiple flags on one line by delimiting flag 
 setFlags c,isCSet,bool,0 b,isBSet,bool,0 a,isASet,bool,0
 ```   
 
-After defining the flags simply call parseFlags and pass all arguments given by the user     
+### parseFlags 
+parseFlags actually does the parsing of the flags. After the flags have been set with setFlags simply call parseFlags and pass all arguments given by the user     
 ```shell
 parseFlags "$@"
 ```
