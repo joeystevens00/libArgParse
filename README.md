@@ -18,7 +18,7 @@ Field 4) sets if the flag is required or not
       * 0 - Not Required    
 
 An example setting a val flag:    
-``` bash
+```shell
 setFlags u,url,val,1
 ```
 
