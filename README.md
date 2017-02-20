@@ -1,5 +1,5 @@
 ## libargparse.sh
-Provides faster and easier argument parsing by generating the getopts code on run time    
+Provides easier argument parsing by generating the getopts code on run time    
 
 ### Usage
 import the bash script   
