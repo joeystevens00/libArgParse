@@ -7,7 +7,9 @@ import the bash script
 source libargparse.sh
 ```
 
-Then define the flags using setFlags. The expected syntax for setFlags is a comma seperated list with 4 fields.    
+Then define the flags using setFlags. The expected syntax for 
+#### setFlags
+setFlags is a comma seperated list with 4 fields.    
 ### Field 1
 Specifies the flag to use     
 ### Field 2
