@@ -29,7 +29,7 @@ Where the flag -u puts the paramater into $url and is required
 An example settings a bool flag:    
 ```shell
 setFlags v,isVerbose,bool,0
-```  
+```
 
 Where the flag -v manipulates the variable $isVerbose to be 1 (otherwise isVerbose is 0) and the flag is optional     
 
