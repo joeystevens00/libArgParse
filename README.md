@@ -29,7 +29,7 @@ Sets if the flag is required or not
       * 0 - Not Required    
 
 #### setFlags examples
-An example defining a val flag
+##### defining val flag 
 In this example a flag -u is defined that manipulates the variable $url with the value of the paramater passed to it and is a required field.  
 
 Defining   
@@ -49,7 +49,7 @@ But if the user executes
 ```
 '-u is required.' will be printed to STDOUT
 
-An example settings a bool flag
+##### defining bool flag 
 In this example the flag -v is defined that manipulates the $isVerbose variable with the value of 1 
 
 Defining      
