@@ -8,14 +8,14 @@ source libargparse.sh
 ```
 
 Then define the flags using setFlags. The expected syntax for setFlags is a comma seperated list where:    
-Field 1) is the flag to use     
-Field 2) is the variable that the flag will manipulate.     
-Field 3) how the flag will manipulate the variable    
+1. is the flag to use     
+2. is the variable that the flag will manipulate.     
+3. how the flag will manipulate the variable    
   * Options:     
       * val - sets the variable to the paramater passed    
       * bool - sets the variable equal to 1 (default 0)  
-          
-Field 4) sets if the flag is required or not   
+
+4. sets if the flag is required or not   
    * Options:   
       * 1 - Required    
       * 0 - Not Required    
