@@ -13,7 +13,8 @@ Field 2) is the variable that the flag will manipulate.
 Field 3) how the flag will manipulate the variable    
   * Options:     
       * val - sets the variable to the paramater passed    
-      * bool - sets the variable equal to 1 (default 0)        
+      * bool - sets the variable equal to 1 (default 0)  
+          
 Field 4) sets if the flag is required or not   
    * Options:   
       * 1 - Required    
